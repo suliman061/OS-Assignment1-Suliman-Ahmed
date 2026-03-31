@@ -9,7 +9,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[in Java. I understood how each process in the simulation was represented as a thread using the Runnable interface. I also learned about different thread states such as New, Runnable, Running, Waiting, and Terminated, and how a thread transitions between them during execution. One important concept I learned was how threads can execute concurrently, giving the impression of parallel execution even on a single CPU. I also gained a better understanding of how context switching works when multiple threads share CPU time. What surprised me was how easy it is to simulate real CPU scheduling using threads, but also how careful we need to be when managing timing and execution order. Overall, this assignment helped me connect theoretical concepts of operating systems with practical implementation.]
 
 ---
 
@@ -17,7 +17,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe the specific challenge. Was it understanding the code? Implementing a feature? Using Git? Explain what made it difficult and how it relates to the course concepts.]
+[The most challenging part of this assignment was implementing and correctly tracking the waiting time for each process. It was difficult because it required precise timing and understanding exactly when a process enters and leaves the ready queue. I had to carefully manage variables like lastQueueEnterTime and update the total waiting time at the correct moment before execution. Another challenge was understanding how threads behave when they are paused and resumed, especially with the use of Thread.sleep() and join(). Debugging was also challenging because small mistakes in timing logic could lead to incorrect results. Additionally, ensuring that processes were re-added to the queue correctly without breaking the scheduling logic required careful attention. This part of the assignment really tested my understanding of both scheduling and thread behavior.]
 
 ---
 
@@ -25,7 +25,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
+[To overcome these challenges, I approached the problem step by step and focused on understanding the flow of the program. I reviewed the code multiple times to track how each process moves through the ready queue and how its state changes. I also used print statements and output analysis to verify whether the waiting times and execution order were correct. When I encountered issues, I broke the problem into smaller parts and tested each part individually. I referred to Java documentation to better understand thread methods like start() and join(). Additionally, I compared the expected behavior of Round-Robin scheduling with my program output to identify inconsistencies. This systematic debugging approach helped me fix errors and improve the accuracy of my implementation.]
 
 ---
 
@@ -33,7 +33,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
+[Multithreading is widely used in many real-world applications to improve performance and responsiveness. For example, web browsers use multiple threads to load web pages, process JavaScript, and handle user interactions simultaneously. This ensures that the user interface remains responsive even while heavy tasks are running in the background. Another example is in mobile applications, where background threads are used to fetch data from the internet without freezing the app. In gaming, threads are used to handle graphics rendering, physics calculations, and user input at the same time. Multithreading is also used in servers to handle multiple client requests efficiently. This assignment helped me understand how these real-world systems manage multiple tasks using threads.]
 
 ---
 
